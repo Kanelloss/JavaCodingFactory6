@@ -9,7 +9,6 @@ public class DateApp {
 
         // Call Scanner Method and initialise variables.
         Scanner in = new Scanner(System.in);
-
         int inputDay, inputMonth, inputYear;
 
         // Ask user to insert day, month, year as an integer.
