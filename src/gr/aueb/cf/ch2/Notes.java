@@ -8,5 +8,6 @@ package gr.aueb.cf.ch2;
 public class Notes {
     public static void main(String[] args) {
         System.out.println("HelloWorld!");
+        System.out.println();
     }
 }
