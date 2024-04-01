@@ -4,7 +4,7 @@ Asks the user to type an integer value of temperature in Fahrenheit and converts
  */
 //
 
-//Import Scanner method.
+// Import Scanner method.
 import java.util.Scanner;
 public class TemperatureApp {
 
@@ -15,14 +15,14 @@ public class TemperatureApp {
         int inputTemp;
         int celsiusTemp;
 
-        //Ask the user to insert a temperature.
+        // Ask the user to insert a temperature.
         System.out.println("Please insert temperature in Fahrenheit");
 
-        //Commands
+        // Commands
         inputTemp = in.nextInt();
         celsiusTemp = 5 * (inputTemp-32)/9;
 
-        //Print final result.
+        // Print final result.
         System.out.printf("Temperature equals to: %d degrees Celsius.", celsiusTemp);
 
     }
