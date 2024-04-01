@@ -22,7 +22,7 @@ public class DateApp {
         System.out.println("Please insert year:");
         inputYear = in.nextInt();
 
-        //Prints date in the form of: DD/MM/YY
+        // Prints date in the form of: DD/MM/YY
         System.out.printf("Date is: %02d / %02d / %02d", inputDay, inputMonth, inputYear);
 
     }
