@@ -2,7 +2,7 @@ package gr.aueb.cf.ch4;
 
 import java.util.Scanner;
 
-public class StarsH10UserInput {
+public class StarsVerUserInput {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class StarsH10UserInput {
         n = in.nextInt();
 
         for (int i = 1; i <=n; i++) {
-            System.out.print("*");
+            System.out.println("*");
         }
     }
 }

@@ -2,7 +2,7 @@ package gr.aueb.cf.ch4;
 
 import java.util.Scanner;
 
-public class StarsHV10UserInput {
+public class StarsHVUserInput {
 
     public static void main(String[] args) {
 
