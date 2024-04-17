@@ -41,7 +41,7 @@ public class MenuMethodsApp {
     }
 
     /**
-     * prints a menu of printing choices
+     * prints a menu of star printing choices
      */
     public static void printMenu() {
         System.out.println("Επιλέξτε ένα από τα παρακάτω:");
