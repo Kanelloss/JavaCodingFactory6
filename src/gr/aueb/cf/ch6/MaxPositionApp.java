@@ -12,13 +12,14 @@ public class MaxPositionApp {
 
         Scanner in = new Scanner(System.in);
 
-        int[] arr = {3, 9, 7, 34, 44, 12, 6};
+        int[] arr = {3, 9, 7, 34, 44, 12, 69, 5};
         int low = 0;
         int high = 0;
         int maxPosition = 0;
 
         // Get positions of low & high from user input in a user friendly way:
         System.out.printf("Please give low and high between: 1, %d", arr.length);
+        System.out.println();
 
         // Store it as it should be (arr[0] = 1st value, arr[arr.length - 1] = max value)
         low = in.nextInt() - 1;
@@ -35,7 +36,7 @@ public class MaxPositionApp {
         }
 
         // Print final result
-        System.out.printf("Max position: %d", maxPosition + 1);
+        System.out.printf("Max position: %d, Max Value: %d", maxPosition + 1, arr[maxPosition]);
     }
 
 
