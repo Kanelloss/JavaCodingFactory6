@@ -68,6 +68,13 @@ public class ArraysExerciseChapter06 {
         System.out.println("Thank you!");
     }
 
+    /**
+     * Searches for an element inside an array
+     * and returns the position of it as an integer.
+     *
+     * @param arr   the array
+     * @return      the element's position
+     */
     public static int getPosition(int[] arr) {
         boolean isFound = false;
         int position = 0;
@@ -85,6 +92,11 @@ public class ArraysExerciseChapter06 {
         else return -1;
     }
 
+    /**
+     * Returns the even numbers inside an array.
+     *
+     * @param arr       the array
+     */
     public static void printEvenNumbers(int[] arr) {
         System.out.println("Even numbers inside the array are the following: ");
         for (int i = 0; i < arr.length; i++) {
@@ -95,6 +107,13 @@ public class ArraysExerciseChapter06 {
         System.out.println();
     }
 
+    /**
+     * Receives an array and returns it as a new array
+     * with each element multiplied by 2.
+     *
+     * @param arr   the initial array
+     * @return      the new array
+     */
     public static int[] DoubleArray(int[] arr) {
 
         int[] copyArray = Arrays.copyOf(arr, arr.length);
@@ -105,6 +124,13 @@ public class ArraysExerciseChapter06 {
         return copyArray;
     }
 
+    /**
+     * Checks if there is at least one positive number
+     * inside an array.
+     *
+     * @param arr   the array
+     * @return      the true/false result
+     */
     public static boolean isOnePositiveM(int[] arr) {
         boolean isOnePositive = false;
 
@@ -112,11 +138,16 @@ public class ArraysExerciseChapter06 {
             if (arr[i] > 0) {
                 isOnePositive = true;
             }
-
         }
         return isOnePositive;
     }
 
+    /**
+     * Checks if all numbers inside an array are positive.
+     *
+     * @param arr   the array
+     * @return      the true/false result
+     */
     public static boolean isAllPositiveM(int[] arr) {
         boolean isAllPositive = true;
 
@@ -124,7 +155,6 @@ public class ArraysExerciseChapter06 {
             if (arr[i] < 0) {
                 isAllPositive = false;
             }
-
         }
         return isAllPositive;
     }
