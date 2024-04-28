@@ -7,7 +7,7 @@ public class MinArray2 {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3};
+        int[] arr = {19, 12, 5};
         int minPosition = getMinPosition(arr);
 
         if (minPosition == -1) {
@@ -19,6 +19,7 @@ public class MinArray2 {
 
     public static int getMinPosition(int[] arr) {
         if(arr == null) return -1;
+
         int minPosition = 0;
         int min = arr[0];
 
