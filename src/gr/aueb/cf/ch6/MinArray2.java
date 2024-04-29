@@ -18,7 +18,7 @@ public class MinArray2 {
     }
 
     public static int getMinPosition(int[] arr) {
-        if(arr == null) return -1;
+        if(arr == null || arr.length < 1) return -1;
 
         int minPosition = 0;
         int min = arr[0];
