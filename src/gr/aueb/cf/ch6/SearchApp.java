@@ -24,6 +24,5 @@ public class SearchApp {
         } else {
             System.out.println("Not found");
         }
-
     }
 }
