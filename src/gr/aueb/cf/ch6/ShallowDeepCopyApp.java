@@ -18,6 +18,13 @@ public class ShallowDeepCopyApp {
         traverse(grid);
         traverse(gridDeepCopy);
 
+        System.out.println();
+
+        int[][] gridShallowCopy = shallowCopy(grid);
+        gridShallowCopy[0][0] = 200;
+        traverse(grid);
+        traverse(gridShallowCopy);
+
 
     }
 
