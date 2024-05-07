@@ -15,7 +15,7 @@ public class StackApp {
         push(4);
         int popped = pop();
         System.out.println("Popped: " + popped);
-        System.out.println("Traverse");
+        System.out.println("Traverse:");
         traverseStack();
     }
 
