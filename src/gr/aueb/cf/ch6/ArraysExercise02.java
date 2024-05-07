@@ -32,7 +32,7 @@ public class ArraysExercise02 {
         System.out.println("The even numbers given are more than 3: " + evens);
 
         odds = hasMoreThan3Odds(arr);
-        System.out.println("The even numbers given are more than 3: " + odds);
+        System.out.println("The odd numbers given are more than 3: " + odds);
 
         consecutives = hasMoreThan3Consecutives(arr);
         System.out.println("The consecutive numbers given are more than 3: " + consecutives);
