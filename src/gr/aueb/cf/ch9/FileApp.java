@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FileApp {
 
     public static void main(String[] args) {
-        File fd = new File("C:/Windows/Temp/file6.txt");
+        File fd = new File("C:/Temp/file1.txt");
         String line;
         String[] tokens;
 

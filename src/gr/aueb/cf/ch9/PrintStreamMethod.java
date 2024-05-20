@@ -7,9 +7,9 @@ public class PrintStreamMethod {
 
     public static void main(String[] args) {
         try {
-            PrintStream ps = new PrintStream("C:/Windows/Temp/file6.txt");
+            PrintStream ps = new PrintStream("C:/temp/file1.txt");
 
-            printMessage(ps, "Hello Coding Factory1!");
+            printMessage(ps, "Hello Coding Factory!");
             printMessage(System.out, "Hello CF1");
 
 
