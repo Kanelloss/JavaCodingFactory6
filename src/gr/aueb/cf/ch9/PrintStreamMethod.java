@@ -9,7 +9,7 @@ public class PrintStreamMethod {
         try {
             PrintStream ps = new PrintStream("C:/temp/file1.txt");
 
-            printMessage(ps, "Hello Coding Factory!");
+            printMessage(ps, "Hello Coding Factory!234");
             printMessage(System.out, "Hello CF1");
 
 

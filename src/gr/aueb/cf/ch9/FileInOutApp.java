@@ -9,7 +9,7 @@ public class FileInOutApp {
 
     public static void main(String[] args) {
         File inFd = new File("C:/Temp/file1.txt");
-        File outFd = new File("C:/Temp/file1.txt");
+        File outFd = new File("C:/Temp/file2.txt");
         String line;
         String[] tokens;
 
@@ -20,7 +20,7 @@ public class FileInOutApp {
                 tokens = line.split(" +");
 
                 for (String token : tokens) {
-                    pw.printf("%s ", token);
+                    pw.printf("ab: %s ", token);
                     pw.flush();
                 }
                 pw.println();
