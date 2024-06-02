@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch13;
 
-import gr.aueb.cf.ch13.model.Account;
+import gr.aueb.cf.ch13.bankapp.model.Account;
 
 public class MainAccount {
 

@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch13.model;
+package gr.aueb.cf.ch13.bankapp.model;
 
 public class Account {
     private int id;
@@ -81,7 +81,7 @@ public class Account {
      */
     public void deposit(double amount) throws Exception {
         try {
-            if(amount <= 0) {
+            if(amount < 0) {
                 throw new Exception("Negative Amount Exception");
           }
             balance += amount;
@@ -137,10 +137,45 @@ public class Account {
      *      the String-representation of the state of the {@link Account}.
      */
     public String accountToString() {
-        return ("(" + id + ", " + iban + ", " + firstname + ", " + ", " + lastname + ", " + ssn + ", " + balance + ")");
+        return ("(ID: " + id + ", Iban: " + iban + ", Firstname: " + firstname + ", Lastname: " + lastname + ", Ssn: " + ssn + ", Balance: " + balance + ")");
     }
 
     private boolean isSsnValid (String ssn) {
         return this.ssn.equals(ssn);
     }
+
+    /** Withdraw an amount larger than balance itself
+     *  from an {@link Account} of money
+     *  based on a valid ssn. If the amount is not larget than
+     *  the account balance, it performs a simple
+     *  withdrawal.
+     *
+     * @param amount
+     *      the amount of money to overdraft/withdraw
+     * @param ssn
+     *      the ssn given.
+     * @throws Exception
+     *      if the ssn is not valid.
+     */
+    public void overdraft(double amount, String ssn) throws Exception {
+        try {
+            if (!isSsnValid(ssn)) {
+                throw new Exception("Ssn not valid exception");
+            }
+
+            if (amount > balance) {
+                balance -= amount;
+                System.out.println("Withdraw of " + amount + " successful. Account overdrafted by: " + (-balance));
+            } else {
+                balance -= amount;
+                System.out.println("Simple withdraw of " + amount + " successful");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+
 }
