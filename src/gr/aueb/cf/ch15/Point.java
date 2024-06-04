@@ -23,7 +23,7 @@ public class Point {
         return "(" + x + ")";
     }
 
-    // API
+    // Public API
 
     public  void movePlus10() {
         x += 10;

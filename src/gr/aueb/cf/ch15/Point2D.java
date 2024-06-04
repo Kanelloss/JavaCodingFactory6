@@ -26,7 +26,7 @@ public class Point2D extends Point {
         return "(" + getX() + ", " + y + ")";
     }
 
-    
+
     // Public API
 
     public  void movePlus10() {
