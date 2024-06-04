@@ -27,15 +27,22 @@ public class Point2D extends Point {
     }
 
 
-    // Public API
-
-    public  void movePlus10() {
-        x += 10;
+    //   Public API
+    @Override
+    public void movePlus10() {
+        super.movePlus10();
+        y += 10;
     }
 
+    @Override
     public void movePlusOne() {
-        x++;
+        super.movePlusOne();
+        y++;
     }
 
-
+    @Override
+    protected void reset() {
+        super.reset();
+        y = 0;
+    }
 }

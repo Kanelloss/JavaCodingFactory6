@@ -27,6 +27,9 @@ public class Point {
 
     public  void movePlus10() {
         x += 10;
+//        for (int i = 1; i <= 10; i++) {
+//            movePlusOne();
+//        }
     }
 
     public void movePlusOne() {
