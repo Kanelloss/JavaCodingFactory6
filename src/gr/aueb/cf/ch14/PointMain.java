@@ -6,6 +6,7 @@ public class PointMain {
         Point zeroPoint = Point.getZeroPoint();
         Point randomPoint = Point.getRandomPoint();
 
+
         Point point = new Point();
     }
 }
