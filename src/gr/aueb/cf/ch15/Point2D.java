@@ -45,4 +45,9 @@ public class Point2D extends Point {
         super.reset();
         y = 0;
     }
+
+    @Override
+    public double getDistanceFromOrigin() {
+        return Math.sqrt((Math.pow(getX(), 2) + Math.pow(getY(), 2)));
+    }
 }
