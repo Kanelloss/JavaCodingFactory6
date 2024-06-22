@@ -11,7 +11,7 @@ public class Main {
 
         deliver(book);
         deliver(cd);
-        // deliver(cat);   // compile time error
+//         deliver(cat);   // compile time error
     }
 
     public static void deliver(Item item) {
