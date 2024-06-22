@@ -21,10 +21,7 @@ public class Shape {
     }
 
     // Constructor for Circle
-
-
-    public Shape(Type type, Type type1) {
-        this.type = type1;
+    public Shape(double radius) {
         type = Type.CIRCLE;
         this.radius = radius;
     }
