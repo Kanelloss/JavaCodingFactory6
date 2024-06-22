@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.marker;
+package gr.aueb.cf.ch17.marker;
 
 public class CompactDisk implements Item{
     private Long id;
