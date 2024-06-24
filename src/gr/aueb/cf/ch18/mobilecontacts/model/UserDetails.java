@@ -1,6 +1,4 @@
-package gr.aueb.cf.mobilecontacts.model;
-
-import java.util.Objects;
+package gr.aueb.cf.ch18.mobilecontacts.model;
 
 public class UserDetails extends AbstractEntity implements IdentifiableEntity {
     private String firstname;
@@ -52,11 +50,15 @@ public class UserDetails extends AbstractEntity implements IdentifiableEntity {
 
         UserDetails that = (UserDetails) o;
 
-        return Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
+        if (getFirstname() != null ? !getFirstname().equals(that.getFirstname()) : that.getFirstname() != null)
+            return false;
+        return getLastname() != null ? getLastname().equals(that.getLastname()) : that.getLastname() == null;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstname, lastname);
+        int result = getFirstname() != null ? getFirstname().hashCode() : 0;
+        result = 31 * result + (getLastname() != null ? getLastname().hashCode() : 0);
+        return result;
     }
 }
