@@ -3,6 +3,7 @@ package gr.aueb.cf.ch17.knight;
 public class Main {
 
     public static void main(String[] args) {
+
         IKnight joa = new Knight();
         IKnight saintGeorge = new Knight();
 
