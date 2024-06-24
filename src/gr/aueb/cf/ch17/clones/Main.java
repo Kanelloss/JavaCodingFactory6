@@ -27,7 +27,7 @@ public class Main {
 //        System.out.println(alice);
 //        System.out.println(clonedAlice);
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:/tmp/trainee.ser"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:/temp/trainee.ser"))) {
             oos.writeObject(alice);
         } catch (NotSerializableException e) {
             e.printStackTrace();
@@ -37,7 +37,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:/tmp/trainee.ser"))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:/temp/trainee.ser"))) {
             Trainee aliceTrainee = (Trainee) ois.readObject();
             System.out.println(aliceTrainee);
         } catch (NotSerializableException e) {
