@@ -1,8 +1,12 @@
 package gr.aueb.cf.ch17.threads;
 
+@FunctionalInterface
 public interface IKnight {
 
     IMission[] missions = {
+            new KillTheDragon(),
+            new SaveThePrincess(),
+            new KillTheDragon()
 
     };
 
