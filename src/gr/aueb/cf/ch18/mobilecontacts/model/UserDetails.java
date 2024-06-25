@@ -14,7 +14,9 @@ public class UserDetails extends AbstractEntity implements IdentifiableEntity {
         this.lastname = lastname;
     }
 
+    // Copy Constructor
     public UserDetails(UserDetails userDetails) {
+        setId(userDetails.getId());
         this.firstname = userDetails.getFirstname();
         this.lastname = userDetails.getLastname();
     }
