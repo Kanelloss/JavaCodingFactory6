@@ -15,8 +15,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class MobileContactServiceImpl implements IMobileContactService{
+
+    // Composition
     private final IMobileContactDAO dao;
 
+    // Wiring DAO to Service
     public MobileContactServiceImpl(IMobileContactDAO dao) {
         this.dao = dao;
     }
