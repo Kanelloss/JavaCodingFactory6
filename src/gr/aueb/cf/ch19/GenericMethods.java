@@ -26,9 +26,9 @@ public class GenericMethods {
         System.out.println();
     }
 
-    public static void print(GenericNode<?> node) {
-        System.out.println(node.getItem());
-    }
+//    public static void print(GenericNode<?> node) {
+//        System.out.println(node.getItem());
+//    }
 
     public static void print(GenericNode<? extends Number> node) {
         System.out.println(node.getItem());
