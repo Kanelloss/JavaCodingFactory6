@@ -13,6 +13,7 @@ public class Main {
         cities.add("Athens");
         cities.add("Paris");
         cities.add("Kalavrita-city");
+        cities.add(2, "London");    // τα υπόλοιπα 1 θέση δεξιά
 
         // Get
         String myCity = cities.get(0);
