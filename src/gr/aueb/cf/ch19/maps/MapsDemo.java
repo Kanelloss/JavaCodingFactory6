@@ -10,9 +10,9 @@ public class MapsDemo {
     public static void main(String[] args) {
 
         Map<String, Product> products = new HashMap<>() {{
-            put("HON", new Product("Oranges", 3.50, 50));
+            put("HON", new Product("Oranges", 13.50, 50));
             put("MIL", new Product("Milk", 2.50, 100));
-            put("ORA", new Product("Oranges", 1.50, 80));
+            put("ORA", new Product("Oranges", 11.50, 80));
             put("EGG", new Product("Eggs", 3.50, 50));
         }};
 
@@ -37,6 +37,9 @@ public class MapsDemo {
 
         prods.forEach(System.out::println);
 
+        System.out.println();
+
+        System.out.println(oranges);
 
 
 
