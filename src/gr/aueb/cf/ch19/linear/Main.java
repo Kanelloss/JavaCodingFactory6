@@ -38,8 +38,8 @@ public class Main {
         // Safe διαγραφή μέσω  iterator.remove()
         Iterator<String> it = cities.iterator();
         while (it.hasNext()) {
-            String c = it.next();
-            if (c.equals("Αθήνα")) {
+            String s = it.next();
+            if (s.equals("Αθήνα")) {
                 it.remove();
                 // cities.remove(c);    ConcurrentModificationException itr fails fast
             }
