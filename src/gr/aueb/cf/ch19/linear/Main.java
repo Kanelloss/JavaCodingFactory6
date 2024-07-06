@@ -41,7 +41,7 @@ public class Main {
             String s = it.next();
             if (s.equals("Αθήνα")) {
                 it.remove();
-                // cities.remove(c);    ConcurrentModificationException itr fails fast
+                // cities.remove(s);    ConcurrentModificationException it fails fast
             }
         }
 
