@@ -9,9 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
         List<Product> products = new ArrayList<>(List.of(new Product("Milk", 2.25, 100), new Product("Honey", 3.50, 50),
-                new Product("Honey", 8.50, 200), new Product("Oranges", 8.50, 20)));
+                new Product("Honey", 8.50, 25), new Product("Oranges", 8.50, 20)));
 
-        // Η filter δεν πειράζει την ίδια λίστα, δημιουργεί μια καινούρια)
+////         Η filter δεν πειράζει την ίδια λίστα, δημιουργεί μια καινούρια)
 //        List<Product> honey = products.stream()
 //                .filter(product -> product.getDescription().equals("Honey"))
 //                .toList();
@@ -20,7 +20,7 @@ public class Main {
 
 //        List<Product> sortedHoney = products.stream()
 //                .filter(product -> product.getDescription().equals("Honey"))
-//                .sorted(Comparator.comparing(Product::getPrice))
+//                .sorted(Comparator.comparing(Product::getPrice, Comparator.reverseOrder()))
 //                .toList();
 //
 //        sortedHoney.forEach(System.out::println);
@@ -42,10 +42,14 @@ public class Main {
 //                .filter(p -> p.getDescription().equals("Honey"))
 //                .reduce(0, (total, p) -> total + p.getQuantity(), Integer::sum);
 //
+//        System.out.println(honeyCount);
+
 //        int honeySum = products.stream()
 //                .filter(p -> p.getDescription().equals("Honey"))
 //                .mapToInt(Product::getQuantity)
 //                .sum();
+//
+//        System.out.println(honeySum);
 
         Optional<Product> opt = products.stream()
                 .filter(p -> p.getPrice() >= 8.50 && p.getQuantity() <= 40)
