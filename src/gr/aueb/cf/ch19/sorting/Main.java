@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<Product> products = new ArrayList<>(List.of(new Product("Milk", 2.25, 100), new Product("Apples", 8.50, 50),
-                new Product("Apples", 8.50, 20), new Product("Apples", 8.50, 20)));
+                new Product("Apples", 4.50, 20), new Product("Apples", 8.50, 20)));
 
 //        System.out.println("Ascending Sorting");
 //        Collections.sort(products);     // Comparable was used
@@ -46,7 +46,7 @@ public class Main {
 
         products.sort(Comparator.comparing(Product::getDescription)
                 .thenComparing(Product::getPrice, Comparator.reverseOrder())
-                .thenComparing(Product::getQuantity));
+                .thenComparing(Product::getQuantity, Comparator.reverseOrder()));
 
         products.forEach(System.out::println);
 
