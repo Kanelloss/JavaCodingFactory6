@@ -24,6 +24,7 @@ public class Main {
         }
 
         countries.forEach((k, v) -> System.out.println("key: " + k + ", value: " + v));
+
         Iterator<Map.Entry<String, String>> itr = countries.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, String> entry = it.next();
