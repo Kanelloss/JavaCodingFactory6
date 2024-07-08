@@ -53,5 +53,19 @@ public class Main {
         return s.matches("\\..");
     }
 
-    
+    public static boolean threeDigits (String s) {
+        return s.matches("\\d{3}");
+    }
+
+    public static boolean inBetweenLetterDigit(String s) {
+        return s.matches(".*\\w\\d.*");
+    }
+
+    public static boolean nestedSchema(String s) {
+        return s.matches("\\[*\\d+]*");
+    }
+
+    public static boolean isEmail(String s) {
+        return s.matches("\\w+\\.?\\w*@\\w+\\.[a-z]{2,4}");
+    }
 }
