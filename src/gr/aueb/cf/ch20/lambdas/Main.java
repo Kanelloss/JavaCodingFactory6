@@ -21,9 +21,9 @@ public class Main {
 //            }
 //        });
 
-//        getFilteredTeachers(teachers, teacher -> teacher.getTeacherId() == 3);  // Υπονοείται το return.
+      getFilteredTeachers(teachers, teacher -> teacher.getTeacherId() == 3);  // Υπονοείται το return.
 
-//        getFilteredTeachers(teachers, teacher -> { return teacher.getTeacherId() == 3; });  // Άλλος τρόπος.
+        getFilteredTeachers(teachers, teacher -> { return teacher.getTeacherId() == 3; });  // Άλλος τρόπος.
 
         List<Teacher> teachersList = getFilteredTeachers(teachers, teacher -> teacher.getTeacherId() <= 3);
 
@@ -31,9 +31,11 @@ public class Main {
 //            teacher.printInstanceTeacher();
 //        }
 
-        printTeachers(teachersList, teacher -> teacher.printInstanceTeacher());
-        printTeachers(teachersList, teacher -> Teacher.printStaticTeacher(teacher));
-        printTeachers(teachersList, teacher -> System.out.println(teacher));
+//        printTeachers(teachersList, teacher -> teacher.printInstanceTeacher());
+//        printTeachers(teachersList, teacher -> Teacher.printStaticTeacher(teacher));
+//        printTeachers(teachersList, teacher -> System.out.println(teacher));
+
+        teachersList.forEach(System.out::println);
 
     }
 
@@ -88,4 +90,5 @@ public class Main {
             consumer.accept(teacher);
         }
     }
+
 }
