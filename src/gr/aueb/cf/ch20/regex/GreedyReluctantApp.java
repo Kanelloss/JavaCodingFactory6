@@ -9,7 +9,7 @@ public class GreedyReluctantApp {
         String s = "login:anna;pass:1234;";
 
         // Greedy
-        // Pattern pattern = Pattern.compile(".*;");
+//         Pattern pattern = Pattern.compile(".*;");
 
         // Reluctant
         Pattern pattern = Pattern.compile(".*?;");  // θα "σταματήσει" στο πρώτο match

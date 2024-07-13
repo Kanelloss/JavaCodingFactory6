@@ -11,10 +11,7 @@ public class Main {
         System.out.println(anySymbolAndDigit(" 4"));
         System.out.println(dotAnyChar(".*"));
 
-
         System.out.println(regexSwap("Athanasios Androutsos"));
-
-
     }
 
     public static boolean isRed(String s) {
