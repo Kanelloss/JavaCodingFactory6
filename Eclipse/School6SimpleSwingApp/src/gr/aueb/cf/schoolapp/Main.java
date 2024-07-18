@@ -6,6 +6,8 @@ public class Main {
 	
 	private final static MainMenuFrame mainMenuFrame = new MainMenuFrame();
 	private final static TeachersMenuFrame teachersMenuFrame = new TeachersMenuFrame();
+	private final static TeachersInsertFrame teachersInsertFrame = new TeachersInsertFrame();
+	private final static TeachersUpdateDeleteFrame teachersUpdateDeleteFrame = new TeachersUpdateDeleteFrame();
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -17,6 +19,16 @@ public class Main {
 					
 					teachersMenuFrame.setLocationRelativeTo(null);
 					teachersMenuFrame.setVisible(false);
+					
+					teachersInsertFrame.setLocationRelativeTo(null);
+					teachersInsertFrame.setVisible(false);
+					
+					teachersUpdateDeleteFrame.setLocationRelativeTo(null);
+					teachersUpdateDeleteFrame.setVisible(false);
+					
+					
+					;
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -31,6 +43,16 @@ public class Main {
 	public static TeachersMenuFrame getTeachersMenuFrame() {
 		return teachersMenuFrame;
 	}
+
+	public static TeachersInsertFrame getTeachersInsertFrame() {
+		return teachersInsertFrame;
+	}
+
+	public static TeachersUpdateDeleteFrame getTeachersUpdateDeleteframe() {
+		return teachersUpdateDeleteFrame;
+	}
+	
+	
 	
 	
 	

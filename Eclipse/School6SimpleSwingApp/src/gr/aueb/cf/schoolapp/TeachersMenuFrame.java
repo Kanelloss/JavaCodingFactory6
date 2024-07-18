@@ -41,7 +41,7 @@ public class TeachersMenuFrame extends JFrame {
 	public TeachersMenuFrame() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(TeachersMenuFrame.class.getResource("/resources/eduv2.png")));
 		setTitle("Μενού Εκπαιδευτών");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 961, 721);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -55,11 +55,18 @@ public class TeachersMenuFrame extends JFrame {
 		teachersViewBtn.setBounds(252, 150, 360, 88);
 		contentPane.add(teachersViewBtn);
 		
-		JButton teachersViewBtn_1 = new JButton("Εισαγωγή Εκπαιδευτή");
-		teachersViewBtn_1.setForeground(Color.BLUE);
-		teachersViewBtn_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		teachersViewBtn_1.setBounds(252, 328, 360, 88);
-		contentPane.add(teachersViewBtn_1);
+		JButton insertBtn = new JButton("Εισαγωγή Εκπαιδευτή");
+		insertBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Main.getTeachersInsertFrame().setVisible(true);
+				Main.getTeachersMenuFrame().setVisible(false);
+				
+			}
+		});
+		insertBtn.setForeground(Color.BLUE);
+		insertBtn.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		insertBtn.setBounds(252, 328, 360, 88);
+		contentPane.add(insertBtn);
 		
 		JButton closeBtn = new JButton("Κλείσιμο");
 		closeBtn.addActionListener(new ActionListener() {
