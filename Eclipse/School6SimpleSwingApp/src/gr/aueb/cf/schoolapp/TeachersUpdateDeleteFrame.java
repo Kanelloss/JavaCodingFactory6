@@ -27,7 +27,7 @@ public class TeachersUpdateDeleteFrame extends JFrame {
 	private JTable teachersTable;
 	private DefaultTableModel model = new DefaultTableModel();
 	private JButton lastnameSearchText;
-	private JTextField textField;
+	private JTextField idText;
 	private JTextField firstnameText;
 	private JTextField lastnameText;
 
@@ -96,11 +96,11 @@ public class TeachersUpdateDeleteFrame extends JFrame {
 		idLabel.setBounds(535, 119, 48, 26);
 		contentPane.add(idLabel);
 		
-		textField = new JTextField();
-		textField.setEditable(false);
-		textField.setBounds(604, 123, 115, 22);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		idText = new JTextField();
+		idText.setEditable(false);
+		idText.setBounds(604, 123, 115, 22);
+		contentPane.add(idText);
+		idText.setColumns(10);
 		
 		JLabel firstnameLabel = new JLabel("Όνομα");
 		firstnameLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));

@@ -41,6 +41,7 @@ public class MainMenuFrame extends JFrame {
 				String sql = "jdbc:mysql://localhost/edudb?serverTimeZone=UTC";
 				String username = "Kanellos";
 				String password = "Kanellos!1312";		// Password should not appear (not be visible) in code-base.
+//				String password = System.getenv("TS_USER_PASSWORD");  // -> not connecting
 				
 				
 				try {
