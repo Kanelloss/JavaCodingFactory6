@@ -3,7 +3,7 @@ package gr.aueb.cf.schoolapp;
 import java.awt.EventQueue;
 
 public class Main {
-	
+
 	private final static MainMenuFrame mainMenuFrame = new MainMenuFrame();
 	private final static TeachersMenuFrame teachersMenuFrame = new TeachersMenuFrame();
 	private final static TeachersInsertFrame teachersInsertFrame = new TeachersInsertFrame();
@@ -25,10 +25,6 @@ public class Main {
 					
 					teachersUpdateDeleteFrame.setLocationRelativeTo(null);
 					teachersUpdateDeleteFrame.setVisible(false);
-					
-					
-					;
-					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -48,14 +44,8 @@ public class Main {
 		return teachersInsertFrame;
 	}
 
-	public static TeachersUpdateDeleteFrame getTeachersUpdateDeleteframe() {
+	public static TeachersUpdateDeleteFrame getTeachersUpdateDeleteFrame() {
 		return teachersUpdateDeleteFrame;
 	}
-	
-	
-	
-	
-	
-	
 
 }

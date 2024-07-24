@@ -34,25 +34,7 @@ public class MainMenuFrame extends JFrame {
 	 */
 	public MainMenuFrame() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MainMenuFrame.class.getResource("/resources/eduv2.png")));
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowOpened(WindowEvent e) {
-				
-				String sql = "jdbc:mysql://localhost/edudb?serverTimeZone=UTC";
-				String username = "Kanellos";
-				String password = "Kanellos!1312";		// Password should not appear (not be visible) in code-base.
-//				String password = System.getenv("TS_USER_PASSWORD");  // -> not connecting
-				
-				
-				try {
-				connection = DriverManager.getConnection(sql, username, password);
-				System.out.println("Connection Success");
-				} catch (SQLException e1) {
-					e1.printStackTrace();
-				}
-				
-			}
-		});
+		
 		setForeground(Color.WHITE);
 		setTitle("Ποιότητα στην Εκπαίδευση");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -128,10 +110,6 @@ public class MainMenuFrame extends JFrame {
 		footer.add(manual);
 		manual.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		manual.setForeground(new Color(65, 105, 225));
-	}
-
-	public static Connection getConnection() {
-		return connection;
 	}
 	
 	
