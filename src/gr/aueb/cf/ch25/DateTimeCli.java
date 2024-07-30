@@ -14,7 +14,8 @@ public class DateTimeCli {
         StringBuilder sb = new StringBuilder();
 
         try {
-            InetAddress servAddress = InetAddress.getByName("time.nist.gov");
+            // InetAddress servAddress = InetAddress.getByName("time.nist.gov");
+            InetAddress servAddress = InetAddress.getByName("127.0.0.1");
             int servPort = 13;
 
             socket = new Socket(servAddress, servPort);
@@ -25,7 +26,8 @@ public class DateTimeCli {
             while ((line = bf.readLine()) != null) {
                 sb.append(line).append("\n");
             }
-            System.out.println(sb);
+//            System.out.println(sb);
+            System.out.println("Local DateTime Server says: " + sb);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
